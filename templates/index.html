@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Oswald&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="/static/images/logo.png" alt="nil">
+    </div>
+    <ul class="navbar-ul">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#DIY">DIY</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+
+
+    <div class="text-box">
+      <h1>Home</h1>
+      <p>
+        American Sign Language (ASL) is a visual language used primarily by the Deaf and hard-of-hearing community in the United States and Canada. ASL uses hand gestures, facial expressions, and body language to convey meaning, and has its own unique grammar and syntax. It is a rich and complex language, capable of expressing a wide range of ideas and emotions. ASL has a long and rich history, dating back to the early 19th century, and has become increasingly recognized as an important language in its own right. Today, ASL is taught in many schools and universities, and is used in a variety of contexts, from everyday conversations between Deaf individuals to performances by professional sign language interpreters.
+
+        ASL is a fascinating language with its own unique features and characteristics. For example, signers often use their eyebrows to indicate questions, and use a range of facial expressions to convey emotions. ASL also has regional variations, with different signs and slang used in different parts of the country. In addition to being used by the Deaf and hard-of-hearing community, ASL is also used by many hearing individuals who have learned it as a second language, either as a way to communicate with Deaf friends and family members or as a profession, such as in interpreting or teaching ASL. Overall, ASL is a vibrant and important language that plays an important role in Deaf culture and the broader world of language and communication. Hover to the DIY section for live experience.
+      </p>
+
+    </div>
+    <div class="image-box">
+      <img src="/static/images/home.png" alt="Example Image">
+    </div>
+
+  </section>
+  <section id="DIY">
+  <div class="text-box">
+    <h1>DIY</h1>
+    <p>Show your hands in the camera with proper lighting and at a proper distance</p>
+    <p>Practise A,B,C... in ASL using live hand-tracker </p>
+    <p>Thank You!!</p>
+  </div>
+  <div class="image-box-video">
+    <img src="{{ url_for('video') }}" alt="/static/images/alt.png" />
+  </div>
+
+  </section>
+  <section id="About">
+    <div class="about-img">
+      <img src="/static/images/about.gif" alt="">
+    </div>
+    <div class="text-box" id="abttxt">
+    <h1>About</h1>
+    <p>This website is created mostlty for educational purpose for the user to have a hands-on experience about American Sign Language.The python application is hosted with the help of flask. A data set is created with the help of "teachable machine" by Google. Then we trained our app with the help of the aquired data and compare with live camera feed. This website is an effort towards a greater potential in future, specially for training purpose.  </p>
+    <p> Please leave a feedback about your experience or any suggestions below!!</p>
+    <p>Note:-Some letters might not work such as O,M ..etc due to similar hnd patterns.</p>
+    </div>
+  
+  </section>
+  <section id="Feedback">
+    <div class="wrapper">
+      <header>Feedback</header>
+      <form action="#">
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="name" placeholder="Enter your name">
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Enter your email">
+            <i class='fas fa-envelope'></i>
+          </div>
+        </div>
+        <div class="dbl-field">
+          <div class="field">
+            <input type="text" name="phone" placeholder="Enter your phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="website" placeholder="Enter your website">
+            <i class='fas fa-globe'></i>
+          </div>
+        </div>
+        <div class="message">
+          <textarea placeholder="Write your message" name="message"></textarea>
+          <i class="material-icons"></i>
+        </div>
+        <div class="button-area">
+          <button type="submit">Submit</button>
+          <span></span>
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>Created by Titas Kundu</p>
+        <div class="social-icons">
+          <a href="https://github.com/titaskundu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/plague_mint/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/titas-kundu-903a1a215" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/static/script/script.js"></script>
+
+</body>
+
+
+</html>
